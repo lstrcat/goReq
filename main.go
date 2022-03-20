@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"goreq/handler"
 	"strings"
 
@@ -24,4 +25,7 @@ func main() {
 	handler.OpenSqlite()
 
 	logger.Info("运行完毕")
+	fmt.Println("按任意键继续...")
+	var input string
+	fmt.Scanln(&input)
 }
